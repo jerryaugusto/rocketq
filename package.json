@@ -1,0 +1,27 @@
+{
+  "name": "rocket.q",
+  "version": "1.0.0",
+  "description": "Anonymous question management system, directed to the owner of the page.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerryaugusto/rocketq.git"
+  },
+  "keywords": [],
+  "author": "Jerry Augusto - 'jdev'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerryaugusto/rocketq/issues"
+  },
+  "homepage": "https://github.com/jerryaugusto/rocketq#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
