@@ -1,3 +1,31 @@
+@charset "UFT-8";
+
+/**
+* Variables n' font rescale.
+*/
+:root {
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --blue: #3485ff;
+  --lightblue: #e0ecff;
+
+  --background: #fbfcff;
+  --overlay: rgba(4, 9, 17, 0.8);
+  --icon-details: #a5b0c1;
+
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-medium: #d3d9e2;
+  --grey-light: #eaecf2;
+
+  --hover-blue: #5699ff;
+  --hover-red: #ea4b65;
+  --hover-grey: #8794a7;
+
+  font-size: 62.5%;
+}
+
 /**
 * Main Resets.
 */
@@ -7,32 +35,6 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-}
-
-/**
-* Variables n' Font Rescale.
-*/
-html {
-  --black: #0d114f;
-  --white: #fafafa;
-  --red: #e83f5b;
-  --blue: #3485ff;
-  --lightblue: #e0ecff;
-
-  --background: #fbfcff;
-  --overlay: #040911;
-  --icon-details: #a5b0c1;
-
-  --grey-dark: #4d5e77;
-  --grey-blue: #a1b2cd;
-  --grey-medium: #d3d9e2;
-  --grey-light: #e5eaf1;
-
-  --hover-blue: #5699ff;
-  --hover-red: #ea4b65;
-  --hover-grey: #8794a7;
-
-  font-size: 62.5%;
 }
 
 body {
@@ -67,7 +69,7 @@ textarea {
 }
 
 /**
-* Tailwind Screen-only.
+* Tailwind screen-only.
 */
 .sr-only {
   position: absolute;
@@ -82,7 +84,7 @@ textarea {
 }
 
 /**
-* Inputs n' Buttons.
+* Inputs n' buttons.
 */
 input,
 button,
@@ -125,3 +127,14 @@ button.outlined,
   border: 0.2rem solid var(--blue);
 }
 
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
+}
