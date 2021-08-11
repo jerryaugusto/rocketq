@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +18,8 @@
   <body>
     <div id="home" class="content">
       <header>
-        <a href="home.html">
-          <img src="images/logo.svg" alt="Rocket.q" />
+        <a href="/">
+          <img src="/images/logo.svg" alt="Rocket.q" />
         </a>
       </header>
 
@@ -30,30 +30,10 @@
 
       <main>
         <div class="container">
-          <section>
-            <h2>Entre como participante.</h2>
-            <form action="" method="post">
-              <label class="sr-only" for="room-id">Código da sala.</label>
-              <input type="number" id="room-id" placeholder="Código da sala." />
-              <button>
-                <img src="images/log-in.svg" alt="Entrar na sala." />
-                Entrar na sala.
-              </button>
-            </form>
-          </section>
 
-          <div class="separator">
-            <div></div>
-            <div>ou</div>
-            <div></div>
-          </div>
+          <!-- Render the correct page, with EJS features. -->
+          <%- include(`parts/${page}`); %>
 
-          <section>
-            <h2>Crie sua própria sala, de forma fácil.</h2>
-            <a href="create-room.html" class="button outlined">
-              <img src="images/users.svg" alt="Criar sala." />Criar sala.
-            </a>
-          </section>
         </div>
       </main>
     </div>
