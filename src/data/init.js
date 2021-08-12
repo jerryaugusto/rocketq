@@ -15,7 +15,8 @@ const initDb = {
       CREATE TABLE questions(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         title TEXT,
-        is_check INT
+        is_check INT,
+        room INT
       )`
     );
 

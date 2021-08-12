@@ -5,18 +5,19 @@ const RoomController = require('./controllers/RoomController');
 const route = express.Router();
 
 /**
- * Gets
+ * Rooms
  */
 route.get('/', (req, res) => res.render('index', { page: 'enter-room' }));
 route.get('/create-room', (req, res) =>
   res.render('index', { page: 'create-room' })
 );
-route.get('/room/:room', (req, res) => res.render('room'));
+route.post('/make-room', RoomController.create);
+route.get('/room/:room', RoomController.open);
 
 /**
- * Posts
+ * Questions
  */
+route.post('/question/create/:room', QuestionController.create);
 route.post('/question/:room/:question/:action', QuestionController.index);
-route.post('/make-room', RoomController.create);
 
 module.exports = route;

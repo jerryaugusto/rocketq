@@ -55,7 +55,7 @@
 #question-form form textarea {
   width: 100%;
   resize: none;
-  background: none;
+  background: transparent;
   outline: none;
 }
 
